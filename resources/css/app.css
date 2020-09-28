@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "Product Sans";
+    src: url("Product\ Sans\ Regular.ttf") format("truetype");
+  }
+
+html {
+    font-family: "Product Sans", sans-serif;
+}
+
+.pagination-s {
+    float: left;
+}
