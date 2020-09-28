@@ -46,7 +46,7 @@ Here are the links to access the app:
 SSL is fully supported on a domain that has an installed certificate.
 
 ## Deployment
-To deploy the app by yourself, download the repository and just configure the .env.example file by mentioning the MySQL database credentials in the .env file. Then, replace all occurrences of my IP address with your server's domain (this will be changed to an env variable in the future). Migrate migrations using artisan, and you're already good to go! There are no extra steps or plugins to be installed.
+To deploy the app by yourself, download the repository and just configure the .env.example file by mentioning the MySQL database credentials in the .env file. Then, replace all occurrences of my server's IP address with your server's domain (this will be changed to an env variable in the future). Migrate migrations using artisan, and you're already good to go! There are no extra steps or plugins to be installed.
 
 Note: To use the admin panel, you'll have to manually create a new user in the users database by creating a new row with the encrypted password generated from your server (at the time I'm writing this I remember that I could add some seeders for that).
 
