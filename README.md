@@ -49,7 +49,7 @@ SSL is fully supported and it will redirect you if you try to use HTTP.
 To deploy the app by yourself, download the repository and configure the .env file by mentioning the MySQL database credentials. 
 
 Then, in ``` resources/js ``` change axios server requests URL with your server's domain (this will be changed to an env variable in the future). 
-Clear caches using the command ``` php artisan optimize ``` and then migrate using ``` php artisan migrate ``.
+Clear caches using the command ``` php artisan optimize ``` and then migrate using ``` php artisan migrate ```.
 
 You're good to go! There are no extra steps or plugins to be installed.
 
