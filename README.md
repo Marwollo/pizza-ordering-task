@@ -35,18 +35,23 @@ application URL (e.g. in Heroku).
 • The solution has to be testable by a non-technical person
 
 ## Additional information
-Due to technical issues with my OS, I couldn't deploy the code to the Heroku server - but I have my self-hosted server, so I'll share the IP of it here, and you'll be able to fully test the app there. I'll be able to use Heroku when I solve the issue.
+Due to technical issues with my OS, I couldn't deploy the code to the Heroku server - but I have my self-hosted server with my own domain with everything manually installed by me (including MySQL server), so the application is there.
 
 Here are the links to access the app:
 
-• Homepage: http://178.149.82.69/
+• Homepage: https://vukmarkovic.com
 
-• Administration panel (you'll need to login from here): http://178.149.82.69/admin
+• Administration panel (you'll need to login from here): https://vukmarkovic.com/admin
 
-SSL is fully supported on a domain that has an installed certificate.
+SSL is fully supported and it will redirect you if you try to use HTTP.
 
 ## Deployment
-To deploy the app by yourself, download the repository and just configure the .env.example file by mentioning the MySQL database credentials in the .env file. Then, replace all occurrences of my server's IP address with your server's domain (this will be changed to an env variable in the future). Migrate migrations using artisan, and you're already good to go! There are no extra steps or plugins to be installed.
+To deploy the app by yourself, download the repository and configure the .env file by mentioning the MySQL database credentials. 
+
+Then, in ``` resources/js ``` change axios server requests URL with your server's domain (this will be changed to an env variable in the future). 
+Clear caches using the command ``` php artisan optimize ``` and then migrate using ``` php artisan migrate ``.
+
+You're good to go! There are no extra steps or plugins to be installed.
 
 Note: To use the admin panel, you'll have to manually create a new user in the users database by creating a new row with the encrypted password generated from your server (at the time I'm writing this I remember that I could add some seeders for that).
 
