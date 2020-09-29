@@ -35,7 +35,7 @@ application URL (e.g. in Heroku).
 • The solution has to be testable by a non-technical person
 
 ## Additional information
-Due to technical issues with my OS, I couldn't deploy the code to the Heroku server - but I have my self-hosted server with my own domain with everything manually installed by me (including MySQL server), so the application is there.
+Heroku doesn't have a persistable storage for user-generated content, so it was impossible to use it because of the CMS that's integrated into the app - but I have my self-hosted server with my own domain with everything manually installed by me (including MySQL server), so the application is there.
 
 Here are the links to access the app:
 
@@ -63,7 +63,7 @@ My primary goal was to be different from the others by creating mechanisms that 
   
   • Performance. Instead of just "rushing" new features, most of the time I've spent by trying to reach the maximum performance possible with the current feature set (global state management, targeted-rerendering, client-side queries when possible to save server resources, etc.)
   
-  • Great design. Also responsive (although there are some components that needs to be fixed)
+  • Great design. Also responsive (although there are some components that need to be fixed)
   
   
 Of course, because of the time constraints, I had to sacrifice some functionalities which would be really easy to implement - for example, pizza popularity statistics, list of orders from customers and their messages.
